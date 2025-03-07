@@ -179,7 +179,7 @@ export default function AboutPage() {
               </div>
               <div className="flex justify-center md:justify-end">
                 <Button size="lg" variant="secondary" asChild>
-                  <Link href="/contact">Contact </Link>
+                  <Link href="/contact">Contact us</Link>
                 </Button>
               </div>
             </div>
