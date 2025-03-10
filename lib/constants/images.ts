@@ -19,11 +19,13 @@ export const IMAGES = {
       sona_masoori: "/placeholder.svg?height=800&width=800",
       arborio: "/placeholder.svg?height=800&width=800",
     },
-    pulses: {
+    pulses: { // Changed from "dals" to "pulses"
       toor: "/placeholder.svg?height=800&width=800",
       moong: "/placeholder.svg?height=800&width=800",
       masoor: "/placeholder.svg?height=800&width=800",
       urad: "/placeholder.svg?height=800&width=800",
+      chana: "/placeholder.svg?height=800&width=800",
+      cumin: "/placeholder.svg?height=800&width=800", // Added Cumin Seeds (Zira)
     },
     spices: {
       cardamom: "/placeholder.svg?height=800&width=800",
@@ -37,6 +39,8 @@ export const IMAGES = {
       ghee: "/placeholder.svg?height=800&width=800",
       flour: "/placeholder.svg?height=800&width=800",
       eggs: "/placeholder.svg?height=800&width=800",
+      allPurposeFlour: "/placeholder.svg?height=800&width=800", // Added All Purpose Flour
+      maida: "/placeholder.svg?height=800&width=800", // Added Maida
     },
   },
 
@@ -51,38 +55,8 @@ export const IMAGES = {
   // Office Images
   offices: {
     dubai: "/placeholder.svg?height=600&width=800",
-    // mumbai: "/placeholder.svg?height=600&width=800",
-    // singapore: "/placeholder.svg?height=600&width=800",
   },
-
-  // Team Images
-  // team: {
-  //   ceo: "/placeholder.svg?height=400&width=400",
-  //   coo: "/placeholder.svg?height=400&width=400",
-  //   sourcing: "/placeholder.svg?height=400&width=400",
-  //   quality: "/placeholder.svg?height=400&width=400",
-  // },
-
-  // Client Logos
-  // clients: {
-  //   logo1: "/placeholder.svg?height=400&width=400",
-  //   logo2: "/placeholder.svg?height=400&width=400",
-  //   logo3: "/placeholder.svg?height=400&width=400",
-  //   logo4: "/placeholder.svg?height=400&width=400",
-  //   logo5: "/placeholder.svg?height=400&width=400",
-  //   logo6: "/placeholder.svg?height=400&width=400",
-  //   logo7: "/placeholder.svg?height=400&width=400",
-  //   logo8: "/placeholder.svg?height=400&width=400",
-  // },
-
-  // Case Studies
-  // caseStudies: {
-  //   restaurant: "/placeholder.svg?height=500&width=800",
-  //   retail: "/placeholder.svg?height=500&width=800",
-  //   hotel: "/placeholder.svg?height=500&width=800",
-  // },
 
   // Map
   map: "/placeholder.svg?height=1000&width=2000",
 }
-

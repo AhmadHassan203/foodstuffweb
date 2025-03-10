@@ -29,7 +29,7 @@ export default function ClientLayout({
           <title>DNG FOODS - Premium Food Products</title>
           <meta
             name="description"
-            content="Global supplier of premium quality food products including rice, dals, spices, and more."
+            content="Global supplier of premium quality food products including rice, pulses, spices, and more."
           />
         </head>
         <body className={inter.className}>
@@ -42,9 +42,9 @@ export default function ClientLayout({
                     <Image
                       src="\logo.png"
                       alt="DNG FOODS Logo"
-                      width={1000}
-                      height={4000}
-                      className="h-10 w-auto"
+                      width={200} // Increased width
+                      height={100} // Increased height
+                      className="h-20 w-auto" // Adjusted className to make it bigger
                     />
                   </Link>
                   <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -203,8 +203,8 @@ export default function ClientLayout({
                       <Link href="/products#rice" className="hover:text-primary transition-colors duration-200">
                         Rice
                       </Link>
-                      <Link href="/products#dals" className="hover:text-primary transition-colors duration-200">
-                        Dals
+                      <Link href="/products#pulses" className="hover:text-primary transition-colors duration-200">
+                        Pulses
                       </Link>
                       <Link href="/products#spices" className="hover:text-primary transition-colors duration-200">
                         Spices
@@ -277,9 +277,9 @@ function MobileNav({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
             <Image
               src="\logo.png"
               alt="DNG FOODS Logo"
-              width={1000}
-              height={4000}
-              className="h-10 w-auto"
+              width={200} // Increased width
+              height={100} // Increased height
+              className="h-20 w-auto" // Adjusted className to make it bigger
             />
           </Link>
           <Button variant="ghost" size="icon" onClick={onClose}>
@@ -307,11 +307,6 @@ function MobileNav({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
             Contact
           </Link>
         </nav>
-        {/* <div className="mt-6 pt-6 border-t">
-          <Button className="w-full btn-gradient" asChild>
-            <Link href="/contact" onClick={onClose}>Contact Us</Link>
-          </Button>
-        </div> */}
       </div>
     </div>
   )

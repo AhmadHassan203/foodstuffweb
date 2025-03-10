@@ -28,7 +28,7 @@ export default function ProductsPage() {
   // Define categories
   const categories = [
     { id: "rice", name: "Rice" },
-    { id: "dals", name: "Dals" },
+    { id: "pulses", name: "Pulses" }, // Changed from "Dals" to "Pulses"
     { id: "spices", name: "Spices" },
     { id: "sugar", name: "Sugar" },
     { id: "ghee", name: "Ghee" },

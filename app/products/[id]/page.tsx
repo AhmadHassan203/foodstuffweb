@@ -83,20 +83,6 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                 </ul>
               </div>
 
-              {/* <div>
-                <h2 className="text-xl font-semibold mb-2">Available Packaging</h2>
-                <div className="flex flex-wrap gap-2">
-                  {product.packaging.map((pkg, index) => (
-                    <div
-                      key={index}
-                      className="px-4 py-2 bg-muted rounded-full text-sm transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
-                    >
-                      {pkg}
-                    </div>
-                  ))}
-                </div>
-              </div> */}
-
               <div>
                 <h2 className="text-xl font-semibold mb-2">Product Specifications</h2>
                 <div className="grid grid-cols-2 gap-4">

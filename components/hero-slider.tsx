@@ -13,21 +13,21 @@ const slides = [
     id: 1,
     image: "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?q=80&w=2000&h=1000&auto=format&fit=crop",
     title: "Premium Quality Food Products",
-    description: "DNG FOODS supplies high-quality rice, dals, spices, and more to businesses worldwide.",
+    // description: "DNG FOODS supplies high-quality rice, dals, spices, and more to businesses worldwide.",
     cta: { text: "View Products", link: "/products" },
   },
   {
     id: 2,
     image: "https://cdn.pixabay.com/photo/2019/07/31/14/43/spice-4375361_1280.jpg",
     title: "Finest Quality Spices",
-    description: "Discover our premium selection of aromatic spices sourced from the best regions.",
+    // description: "Discover our premium selection of aromatic spices sourced from the best regions.",
     cta: { text: "Explore Spices", link: "/products#spices" },
   },
   {
     id: 3,
     image: "https://media.istockphoto.com/id/153737841/photo/rice.jpg?s=612x612&w=0&k=20&c=lfO7iLT0UsDDzra0uBOsN1rvr2d5OEtrG2uwbts33_c=",
     title: "Premium Rice Varieties",
-    description: "From Basmati to Jasmine, explore our extensive collection of premium rice.",
+    // description: "From Basmati to Jasmine, explore our extensive collection of premium rice.",
     cta: { text: "View Rice", link: "/products#rice" },
   },
 ]
@@ -98,7 +98,7 @@ export default function HeroSlider() {
                 }`}
               >
                 <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">{slide.title}</h1>
-                <p className="text-lg text-white/90 md:text-xl">{slide.description}</p>
+                {/* <p className="text-lg text-white/90 md:text-xl">{slide.description}</p> */}
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Button size="lg" className="btn-gradient rounded-full shadow-lg" asChild>
                     <Link href={slide.cta.link}>{slide.cta.text}</Link>

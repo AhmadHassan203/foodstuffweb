@@ -4,7 +4,6 @@ import { ChevronRight, ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import ProductCarousel from "@/components/product-carousel"
-// import TestimonialSlider from "@/components/testimonial-slider"
 import HeroSlider from "@/components/hero-slider"
 
 export default function Home() {
@@ -36,6 +35,11 @@ export default function Home() {
                   image: "https://cdn.pixabay.com/photo/2013/07/25/12/03/chana-166987_1280.jpg",
                   description: "Nutritious & fresh",
                 },
+                // {
+                //   name: "Cumin Seeds (Zira)",
+                //   image: "https://cdn.pixabay.com/photo/2016/11/29/05/45/cumin-seeds-1868034_1280.jpg",
+                //   description: "Aromatic & flavorful",
+                // },
                 {
                   name: "Spices",
                   image: "https://cdn.pixabay.com/photo/2016/12/17/18/51/spices-1914130_1280.jpg",
@@ -56,6 +60,16 @@ export default function Home() {
                   image: "https://cdn.pixabay.com/photo/2016/07/19/15/58/flour-1528396_1280.jpg",
                   description: "Versatile & fresh",
                 },
+                // {
+                //   name: "All Purpose Flour",
+                //   image: "https://cdn.pixabay.com/photo/2016/07/19/15/58/flour-1528396_1280.jpg",
+                //   description: "Versatile & fresh",
+                // },
+                // {
+                //   name: "Maida",
+                //   image: "https://cdn.pixabay.com/photo/2016/07/19/15/58/flour-1528396_1280.jpg",
+                //   description: "Versatile & fresh",
+                // },
                 {
                   name: "Eggs",
                   image: "https://cdn.pixabay.com/photo/2017/08/04/18/04/egg-2580904_1280.jpg",
@@ -167,26 +181,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Testimonials */}
-        {/* <section className="py-16 md:py-24">
-          <div className="container">
-            <div className="flex flex-col items-center text-center mb-12 animate-fade-in">
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-2">What Our Clients Say</h2>
-              <div className="w-20 h-1 bg-primary rounded-full mb-6"></div>
-              <p className="mt-4 text-muted-foreground max-w-3xl">
-                Don't just take our word for it – hear from some of our satisfied clients
-              </p>
-            </div>
-            <TestimonialSlider />
-          </div>
-        </section> */}
-
         {/* Call To Action */}
         <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-primary/80 text-white">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="animate-fade-in">
-                <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Ready to Partner With Us?</h2>
+                <h2 className="text-3xl font-bold">Ready to Partner With Us?</h2>
                 <p className="mt-4 opacity-90">
                   Join our network of satisfied clients and experience the difference of working with a trusted
                   supplier.

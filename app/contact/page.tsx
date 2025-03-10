@@ -243,38 +243,39 @@ export default function ContactPage() {
         </section>
 
         {/* Map Section */}
-        <section className="py-16 bg-muted/30">
-          <div className="container">
-            <div className="text-center mb-12 animate-fade-in">
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Our Global Presence</h2>
-              <p className="text-muted-foreground max-w-3xl mx-auto">
-                With offices strategically located around the world, we're always close to our clients.
-              </p>
-            </div>
-            <div className="aspect-[21/9] relative rounded-lg overflow-hidden animate-fade-in">
-              <Image
-                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2000&h=1000&auto=format&fit=crop"
-                alt="Global Map"
-                fill
-                className="object-cover"
-              />
-              {offices.map((office, index) => (
-                <div
-                  key={index}
-                  className="absolute w-4 h-4 bg-primary rounded-full transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:scale-150 transition-transform duration-300"
-                  style={{
-                    top: `${30 + index * 20}%`,
-                    left: `${20 + index * 30}%`,
-                  }}
-                >
-                  <span className="absolute top-6 left-1/2 transform -translate-x-1/2 whitespace-nowrap bg-primary text-primary-foreground px-2 py-1 rounded text-sm">
-                    {office.city}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* Map Section */}
+<section className="py-16 bg-muted/30">
+  <div className="container">
+    <div className="text-center mb-12 animate-fade-in">
+      <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Our Global Presence</h2>
+      <p className="text-muted-foreground max-w-3xl mx-auto">
+        With offices strategically located around the world, we're always close to our clients.
+      </p>
+    </div>
+    <div className="aspect-[21/9] relative rounded-lg overflow-hidden animate-fade-in">
+      <Image
+        src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2000&h=1000&auto=format&fit=crop"
+        alt="Global Map"
+        fill
+        className="object-cover"
+      />
+      {offices.map((office, index) => (
+        <div
+          key={index}
+          className="absolute w-4 h-4 bg-primary rounded-full transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:scale-150 transition-transform duration-300"
+          style={{
+            top: "60%", // Adjusted for vertical positioning (Dubai is slightly below the middle)
+            left: "61.5%", // Adjusted for horizontal positioning (Dubai is on the right side of the map)
+          }}
+        >
+          <span className="absolute top-6 left-1/2 transform -translate-x-1/2 whitespace-nowrap bg-primary text-primary-foreground px-2 py-1 rounded text-sm">
+            {office.city}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
         {/* Call to Action */}
         <section className="py-16 bg-primary text-primary-foreground">

@@ -33,7 +33,7 @@ export default function AboutPage() {
         <section className="relative py-16 md:py-24">
           <div className="absolute inset-0 z-0">
             <Image
-              src="https://images.unsplash.com/photo-1444952483853-7c36e902e722?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGFib3V0JTIwZm9vZCUyMGNvbXBhbnl8ZW58MHwwfDB8fHww"
+              src="https://img.freepik.com/free-photo/silhouette-business-people-discussion-meeting-cityscape-team-concept_53876-146187.jpg?semt=ais_hybrid"
               alt="About Our Company"
               priority
               fill
@@ -42,7 +42,7 @@ export default function AboutPage() {
           </div>
           <div className="container relative z-10">
             <div className="max-w-xl space-y-4 text-white">
-              <h1 className="text-4xl font-bold tracking-tight md:text-5xl">About DNG FOODS</h1>
+              <h1 className="text-4xl font-bold tracking-tight md:text-5xl">About US</h1>
               <p className="text-lg md:text-xl">A trusted global supplier of premium quality food products.</p>
             </div>
           </div>
@@ -79,7 +79,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1557804506-d8017c1e4856?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2QlMjBjb21wYW55fGVufDB8fDB8fHww"
+                  src="https://img.freepik.com/free-photo/close-up-young-colleagues-having-meeting_23-2149060259.jpg?semt=ais_hybrid"
                   alt="Our company history"
                   fill
                   className="object-cover"

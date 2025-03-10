@@ -1,5 +1,4 @@
-import { Images } from "lucide-react"
-import { IMAGES } from "../constants"
+import { IMAGES } from "../constants";
 
 export const PRODUCTS = {
   rice: [
@@ -33,7 +32,7 @@ export const PRODUCTS = {
         IMAGES.products.rice.jasmine,
         IMAGES.products.rice.brown,
         IMAGES.products.rice.sona_masoori,
-        IMAGES.products.rice.arborio
+        IMAGES.products.rice.arborio,
       ],
     },
     {
@@ -65,7 +64,7 @@ export const PRODUCTS = {
         IMAGES.products.rice.basmati,
         IMAGES.products.rice.brown,
         IMAGES.products.rice.sona_masoori,
-        IMAGES.products.rice.arborio
+        IMAGES.products.rice.arborio,
       ],
     },
     {
@@ -97,7 +96,7 @@ export const PRODUCTS = {
         IMAGES.products.rice.basmati,
         IMAGES.products.rice.jasmine,
         IMAGES.products.rice.sona_masoori,
-        IMAGES.products.rice.arborio
+        IMAGES.products.rice.arborio,
       ],
     },
     {
@@ -129,7 +128,7 @@ export const PRODUCTS = {
         IMAGES.products.rice.basmati,
         IMAGES.products.rice.jasmine,
         IMAGES.products.rice.brown,
-        IMAGES.products.rice.arborio
+        IMAGES.products.rice.arborio,
       ],
     },
     {
@@ -158,18 +157,18 @@ export const PRODUCTS = {
       },
       images: [
         IMAGES.products.rice.arborio,
-        IMAGES.products.rice.basmati, // Using placeholder
+        IMAGES.products.rice.basmati,
         IMAGES.products.rice.jasmine,
         IMAGES.products.rice.brown,
-        IMAGES.products.rice.sona_masoori
+        IMAGES.products.rice.sona_masoori,
       ],
     },
   ],
-  dals: [
+  pulses: [
     {
       id: 6,
       name: "Toor Dal (Arhar Dal)",
-      category: "dals",
+      category: "pulses",
       description: "Split yellow pigeon peas, a staple in Indian cuisine, perfect for soups and stews.",
       longDescription:
         "Toor Dal, also known as Arhar Dal or split pigeon peas, is a staple in Indian households. It has a mild, nutty flavor and cooks to a soft consistency, making it perfect for traditional dishes like sambar, dal fry, and various soups and stews.",
@@ -191,17 +190,17 @@ export const PRODUCTS = {
         storage: "Store in a cool, dry place",
       },
       images: [
-        IMAGES.products.dals.toor,
-        IMAGES.products.dals.moong,
-        IMAGES.products.dals.masoor,
-        IMAGES.products.dals.urad,
-        IMAGES.products.dals.chana,
+        IMAGES.products.pulses.toor,
+        IMAGES.products.pulses.moong,
+        IMAGES.products.pulses.masoor,
+        IMAGES.products.pulses.urad,
+        IMAGES.products.pulses.chana,
       ],
     },
     {
       id: 7,
       name: "Moong Dal (Split Mung Beans)",
-      category: "dals",
+      category: "pulses",
       description: "Split yellow mung beans with high nutritional value, ideal for light and digestible dishes.",
       longDescription:
         "Moong Dal consists of split yellow mung beans that are easy to digest and cook quickly. With a mild, sweet flavor, it's perfect for khichdi, soups, and light meals. It's highly nutritious, packed with protein, fiber, and essential minerals.",
@@ -223,17 +222,17 @@ export const PRODUCTS = {
         storage: "Store in a cool, dry place",
       },
       images: [
-        IMAGES.products.dals.moong,
-        IMAGES.products.dals.toor,
-        IMAGES.products.dals.masoor,
-        IMAGES.products.dals.urad,
-        IMAGES.products.dals.chana,
+        IMAGES.products.pulses.moong,
+        IMAGES.products.pulses.toor,
+        IMAGES.products.pulses.masoor,
+        IMAGES.products.pulses.urad,
+        IMAGES.products.pulses.chana,
       ],
     },
     {
       id: 8,
       name: "Masoor Dal (Red Lentils)",
-      category: "dals",
+      category: "pulses",
       description: "Split red lentils that cook quickly and have a mild, earthy flavor.",
       longDescription:
         "Masoor Dal, or split red lentils, is known for its quick cooking time and soft texture. With a mild, slightly sweet, earthy flavor, it's perfect for soups, stews, and light curries. It's also rich in protein, fiber, and iron.",
@@ -255,17 +254,17 @@ export const PRODUCTS = {
         storage: "Store in a cool, dry place",
       },
       images: [
-        IMAGES.products.dals.masoor,
-        IMAGES.products.dals.toor,
-        IMAGES.products.dals.moong,
-        IMAGES.products.dals.urad,
-        IMAGES.products.dals.chana,
+        IMAGES.products.pulses.masoor,
+        IMAGES.products.pulses.toor,
+        IMAGES.products.pulses.moong,
+        IMAGES.products.pulses.urad,
+        IMAGES.products.pulses.chana,
       ],
     },
     {
       id: 9,
       name: "Urad Dal (Black Gram)",
-      category: "dals",
+      category: "pulses",
       description: "Split black gram lentils, essential for South Indian dishes like dosa and idli.",
       longDescription:
         "Urad Dal, or split black gram, is a versatile lentil with a distinctive earthy flavor. It's the key ingredient in many South Indian dishes including dosa, idli, and vada. Available in whole (with skin), split (with skin), and split (without skin) varieties.",
@@ -287,17 +286,17 @@ export const PRODUCTS = {
         storage: "Store in a cool, dry place",
       },
       images: [
-        IMAGES.products.dals.urad,
-        IMAGES.products.dals.toor,
-        IMAGES.products.dals.moong,
-        IMAGES.products.dals.masoor,
-        IMAGES.products.dals.chana,
+        IMAGES.products.pulses.urad,
+        IMAGES.products.pulses.toor,
+        IMAGES.products.pulses.moong,
+        IMAGES.products.pulses.masoor,
+        IMAGES.products.pulses.chana,
       ],
     },
     {
       id: 10,
       name: "Chana Dal (Split Bengal Gram)",
-      category: "dals",
+      category: "pulses",
       description: "Split chickpeas with a nutty flavor, commonly used in curries and snacks.",
       longDescription:
         "Chana Dal, or split Bengal gram, has a mild, nutty flavor and holds its shape well when cooked. It's used in a variety of dishes from curries and soups to snacks and sweets. It's also high in protein, fiber, and has a low glycemic index.",
@@ -319,11 +318,11 @@ export const PRODUCTS = {
         storage: "Store in a cool, dry place",
       },
       images: [
-        IMAGES.products.dals.chana,
-        IMAGES.products.dals.toor, // Using placeholder
-        IMAGES.products.dals.moong,
-        IMAGES.products.dals.masoor,
-        IMAGES.products.dals.urad,
+        IMAGES.products.pulses.chana,
+        IMAGES.products.pulses.toor,
+        IMAGES.products.pulses.moong,
+        IMAGES.products.pulses.masoor,
+        IMAGES.products.pulses.urad,
       ],
     },
   ],
@@ -357,7 +356,7 @@ export const PRODUCTS = {
         IMAGES.products.spices.saffron,
         IMAGES.products.spices.turmeric,
         IMAGES.products.spices.pepper,
-        IMAGES.products.spices.blackpepper
+        IMAGES.products.spices.blackpepper,
       ],
     },
     {
@@ -389,7 +388,7 @@ export const PRODUCTS = {
         IMAGES.products.spices.cardamom,
         IMAGES.products.spices.turmeric,
         IMAGES.products.spices.pepper,
-        IMAGES.products.spices.blackpepper
+        IMAGES.products.spices.blackpepper,
       ],
     },
     {
@@ -421,7 +420,7 @@ export const PRODUCTS = {
         IMAGES.products.spices.cardamom,
         IMAGES.products.spices.saffron,
         IMAGES.products.spices.pepper,
-        IMAGES.products.spices.blackpepper
+        IMAGES.products.spices.blackpepper,
       ],
     },
     {
@@ -453,7 +452,7 @@ export const PRODUCTS = {
         IMAGES.products.spices.pepper,
         IMAGES.products.spices.cardamom,
         IMAGES.products.spices.saffron,
-        IMAGES.products.spices.turmeric
+        IMAGES.products.spices.turmeric,
       ],
     },
     {
@@ -481,11 +480,43 @@ export const PRODUCTS = {
         form: "Whole sticks (quills)",
       },
       images: [
-        IMAGES.products.spices.pepper, // Using placeholder
+        IMAGES.products.spices.pepper,
         IMAGES.products.spices.cardamom,
         IMAGES.products.spices.saffron,
         IMAGES.products.spices.turmeric,
-        IMAGES.products.spices.blackpepper
+        IMAGES.products.spices.blackpepper,
+      ],
+    },
+    {
+      id: 16,
+      name: "Cumin Seeds (Zeera)",
+      category: "spices",
+      description: "Premium quality cumin seeds with a warm, earthy flavor and aromatic fragrance.",
+      longDescription:
+        "Our premium cumin seeds are carefully selected for their rich aroma and flavor. Known for their digestive benefits and culinary versatility, these seeds are a staple in Indian, Middle Eastern, and Mediterranean cuisines. Perfect for tempering, seasoning, and spice blends.",
+      price: "Wholesale pricing available",
+      packaging: ["100g packs", "500g packs", "1kg bags", "5kg bags"],
+      features: [
+        "Rich, earthy flavor",
+        "High essential oil content",
+        "No artificial additives",
+        "Versatile culinary use",
+        "Premium quality selection",
+        "ISO certified production",
+      ],
+      specifications: {
+        origin: "India",
+        type: "Whole seeds",
+        shelfLife: "24 months",
+        storage: "Store in a cool, dry place",
+        form: "Whole seeds",
+      },
+      images: [
+        IMAGES.products.spices.cumin,
+        IMAGES.products.spices.cardamom,
+        IMAGES.products.spices.saffron,
+        IMAGES.products.spices.turmeric,
+        IMAGES.products.spices.blackpepper,
       ],
     },
   ],
@@ -520,7 +551,7 @@ export const PRODUCTS = {
         IMAGES.products.other.ghee,
         IMAGES.products.other.flour,
         IMAGES.products.other.eggs,
-        IMAGES.products.other.brownsugar
+        IMAGES.products.other.brownsugar,
       ],
     },
     {
@@ -621,6 +652,71 @@ export const PRODUCTS = {
         IMAGES.products.other.eggs,
       ],
     },
+    {
+      id: 32,
+      name: "All Purpose Flour",
+      category: "flour",
+      description: "Versatile all-purpose flour suitable for baking, cooking, and frying.",
+      longDescription:
+        "Our All Purpose Flour is finely milled from premium wheat, making it ideal for a wide range of culinary applications. Whether you're baking cakes, cookies, or bread, or preparing batters for frying, this flour delivers consistent results every time.",
+      price: "Wholesale pricing available",
+      packaging: ["1kg bags", "5kg bags", "10kg bags", "25kg sacks"],
+      features: [
+        "Finely milled for smooth texture",
+        "Versatile for baking and cooking",
+        "Consistent quality",
+        "No additives or preservatives",
+        "Suitable for home and commercial use",
+        "Premium wheat source",
+      ],
+      specifications: {
+        origin: "Multiple regions",
+        type: "Wheat flour",
+        proteinContent: "9-11%",
+        shelfLife: "6 months",
+        storage: "Store in a cool, dry place",
+      },
+      images: [
+        IMAGES.products.other.allpurposeflour,
+        IMAGES.products.other.flour,
+        IMAGES.products.other.sugar,
+        IMAGES.products.other.ghee,
+        IMAGES.products.other.eggs,
+      ],
+    },
+    {
+      id: 33,
+      name: "Maida (Refined Flour)",
+      category: "flour",
+      description: "Refined wheat flour perfect for baking and making pastries, bread, and noodles.",
+      longDescription:
+        "Maida, or refined wheat flour, is a finely milled flour with a soft texture, making it ideal for baking pastries, bread, and noodles. It is a key ingredient in many Indian and international recipes, providing a light and fluffy texture to baked goods.",
+      price: "Wholesale pricing available",
+      packaging: ["1kg bags", "5kg bags", "10kg bags", "25kg sacks"],
+      features: [
+        "Soft, fine texture",
+        "Ideal for baking and pastries",
+        "Consistent quality",
+        "No additives or preservatives",
+        "Suitable for home and commercial use",
+        "Premium wheat source",
+      ],
+      specifications: {
+        origin: "Multiple regions",
+        type: "Refined wheat flour",
+        proteinContent: "8-10%",
+        shelfLife: "6 months",
+        storage: "Store in a cool, dry place",
+      },
+      images: [
+        IMAGES.products.other.maida,
+        IMAGES.products.other.flour,
+        IMAGES.products.other.sugar,
+        IMAGES.products.other.ghee,
+        IMAGES.products.other.eggs,
+
+      ],
+    },
   ],
   eggs: [
     {
@@ -655,15 +751,15 @@ export const PRODUCTS = {
       ],
     },
   ],
-}
+};
 
 export function getProductById(id: number) {
   return Object.values(PRODUCTS)
     .flat()
-    .find((product) => product.id === id)
+    .find((product) => product.id === id);
 }
 
 export function getRelatedProducts(categoryName: string, currentProductId: number) {
-  const categoryProducts = PRODUCTS[categoryName as keyof typeof PRODUCTS] || []
-  return categoryProducts.filter((product) => product.id !== currentProductId).slice(0, 3) // Return up to 3 related products
+  const categoryProducts = PRODUCTS[categoryName as keyof typeof PRODUCTS] || [];
+  return categoryProducts.filter((product) => product.id !== currentProductId).slice(0, 3); // Return up to 3 related products
 }
