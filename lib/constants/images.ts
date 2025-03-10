@@ -19,7 +19,7 @@ export const IMAGES = {
       sona_masoori: "/placeholder.svg?height=800&width=800",
       arborio: "/placeholder.svg?height=800&width=800",
     },
-    dals: {
+    pulses: {
       toor: "/placeholder.svg?height=800&width=800",
       moong: "/placeholder.svg?height=800&width=800",
       masoor: "/placeholder.svg?height=800&width=800",

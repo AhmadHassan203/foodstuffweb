@@ -32,7 +32,7 @@ export default function Home() {
                   description: "Premium varieties",
                 },
                 {
-                  name: "Dals",
+                  name: "Pulses",
                   image: "https://cdn.pixabay.com/photo/2013/07/25/12/03/chana-166987_1280.jpg",
                   description: "Nutritious & fresh",
                 },
@@ -220,4 +220,3 @@ export default function Home() {
     </div>
   )
 }
-

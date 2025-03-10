@@ -13,24 +13,24 @@
     --popover: 0 0% 100%;
     --popover-foreground: 20 15% 20%;
 
-    --primary: 22 85% 40%;
+    --primary: 120 50% 55%; /* Fresh, vibrant leafy green for light mode (e.g., #5CB85C) */
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 35 80% 95%;
-    --secondary-foreground: 22 50% 25%;
+    --secondary: 120 50% 90%; /* Light green for secondary */
+    --secondary-foreground: 120 50% 25%;
 
-    --muted: 30 20% 95%;
-    --muted-foreground: 20 10% 40%;
+    --muted: 120 20% 95%;
+    --muted-foreground: 120 10% 40%;
 
-    --accent: 35 80% 95%;
-    --accent-foreground: 22 50% 25%;
+    --accent: 120 50% 90%;
+    --accent-foreground: 120 50% 25%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 20 15% 90%;
-    --input: 20 15% 90%;
-    --ring: 22 85% 40%;
+    --border: 120 15% 90%;
+    --input: 120 15% 90%;
+    --ring: 120 50% 55%; /* Fresh, vibrant leafy green for light mode (e.g., #5CB85C) */
 
     --radius: 0.75rem;
   }
@@ -45,7 +45,7 @@
     --popover: 20 15% 15%;
     --popover-foreground: 20 10% 90%;
 
-    --primary: 22 75% 45%;
+    --primary: 120 40% 35%; /* Darker, richer leafy green for dark mode (e.g., #388E3C) */
     --primary-foreground: 0 0% 98%;
 
     --secondary: 20 15% 20%;
@@ -62,7 +62,7 @@
 
     --border: 20 15% 25%;
     --input: 20 15% 25%;
-    --ring: 22 75% 45%;
+    --ring: 120 40% 35%; /* Darker, richer leafy green for dark mode (e.g., #388E3C) */
   }
 }
 
@@ -294,4 +294,3 @@ html {
     padding-bottom: 3rem !important;
   }
 }
-

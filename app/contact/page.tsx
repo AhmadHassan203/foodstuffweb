@@ -1,26 +1,59 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { Mail, MapPin, Phone } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { IMAGES } from "@/lib/constants"
+import Image from "next/image";
+import { Mail, MapPin, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { IMAGES } from "@/lib/constants";
+import axios from "axios";
+import { useState, ChangeEvent, FormEvent } from "react";
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    company: "",
+    inquiryType: "",
+    message: "",
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState("");
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await axios.post("/api/sendEmail", formData);
+      setSubmitMessage(response.data.message);
+    } catch (error) {
+      setSubmitMessage("Failed to send message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   const offices = [
     {
       city: "Dubai",
       country: "UAE",
-      address: " Dubai, UAE",
-      image: IMAGES.offices.dubai,
+      address: "Dubai, UAE",
+      image: IMAGES.offices.dubai, // Ensure IMAGES.offices.dubai is defined
       phone: "+971 54 314 9589",
       email: "info@dngfoodstuff.com",
     },
-  ]
+  ];
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -49,7 +82,7 @@ export default function ContactPage() {
         </section>
 
         {/* Contact Form Section */}
-        <section id="contact-form" className="py-16"> {/* Add id here */}
+        <section id="contact-form" className="py-16">
           <div className="container">
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Contact Form */}
@@ -61,26 +94,30 @@ export default function ContactPage() {
                   </p>
                 </div>
 
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="first-name">First name</Label>
                       <Input
                         id="first-name"
-                        name="first-name"
+                        name="firstName"
                         placeholder="Enter your first name"
                         className="dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:placeholder:text-gray-400"
                         required
+                        value={formData.firstName}
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="last-name">Last name</Label>
                       <Input
                         id="last-name"
-                        name="last-name"
+                        name="lastName"
                         placeholder="Enter your last name"
                         className="dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:placeholder:text-gray-400"
                         required
+                        value={formData.lastName}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -94,6 +131,8 @@ export default function ContactPage() {
                       placeholder="Enter your email"
                       className="dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:placeholder:text-gray-400"
                       required
+                      value={formData.email}
+                      onChange={handleChange}
                     />
                   </div>
 
@@ -104,12 +143,20 @@ export default function ContactPage() {
                       name="company"
                       placeholder="Enter your company name"
                       className="dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                      value={formData.company}
+                      onChange={handleChange}
                     />
                   </div>
 
                   <div className="space-y-2">
                     <Label htmlFor="inquiry-type">Type of Inquiry</Label>
-                    <Select name="inquiry-type" required>
+                    <Select
+                      name="inquiryType"
+                      required
+                      onValueChange={(value: string) =>
+                        setFormData((prev) => ({ ...prev, inquiryType: value }))
+                      }
+                    >
                       <SelectTrigger className="dark:bg-gray-800 dark:border-gray-700 dark:text-white">
                         <SelectValue placeholder="Select inquiry type" />
                       </SelectTrigger>
@@ -138,12 +185,15 @@ export default function ContactPage() {
                       placeholder="Tell us about your requirements"
                       className="min-h-[150px] dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:placeholder:text-gray-400"
                       required
+                      value={formData.message}
+                      onChange={handleChange}
                     />
                   </div>
 
-                  <Button size="lg" className="w-full sm:w-auto" type="submit">
-                    Send Message
+                  <Button size="lg" className="w-full sm:w-auto" type="submit" disabled={isSubmitting}>
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
+                  {submitMessage && <p className="text-sm text-muted-foreground">{submitMessage}</p>}
                 </form>
               </div>
 
@@ -240,7 +290,9 @@ export default function ContactPage() {
                   variant="secondary"
                   className="transition-all duration-300 hover:scale-105"
                   onClick={() => {
-                    window.location.href = `tel:${offices[0].phone}`
+                    if (typeof window !== "undefined") {
+                      window.location.href = `tel:${offices[0].phone}`;
+                    }
                   }}
                 >
                   Call Now
@@ -264,5 +316,5 @@ export default function ContactPage() {
         </section>
       </main>
     </div>
-  )
+  );
 }

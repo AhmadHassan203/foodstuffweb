@@ -53,20 +53,27 @@ export default function AboutPage() {
           <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-6">Our Story</h2>
-                <div className="space-y-4">
+                <h2 className="text-3xl font-bold mb-6">Welcome to DNG FOODS</h2>
+                <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Founded in 2005, DNG FOODS began as a small family business with a vision to connect global food
-                    producers with businesses that demand the highest quality standards.
+                    Welcome to DNG FOODS, your trusted destination for high-quality food products that bring flavor and
+                    nutrition to your kitchen. We are passionate about sourcing the finest ingredients from around the
+                    world, ensuring that every product we offer is of the highest standard.
                   </p>
                   <p>
-                    Over the past 20 years, we've grown into a trusted international supplier, but our core values
-                    remain the same: quality, reliability, and exceptional service.
+                    Our mission is simple: to provide our customers with access to fresh, delicious, and sustainable
+                    food options that cater to every taste and dietary need. Whether you're a seasoned chef, a home
+                    cook, or someone just starting their culinary journey, we have something special for you.
                   </p>
                   <p>
-                    Today, we supply premium food products to restaurants, retailers, and distributors across 30+
-                    countries, maintaining direct relationships with farmers and producers to ensure the best quality
-                    and pricing for our clients.
+                    At DNG FOODS, we believe that food is more than just sustenance – it's a way to connect with others,
+                    explore new cultures, and create memorable moments. Our team works tirelessly to bring you a curated
+                    selection of pantry staples, snacks, gourmet ingredients, and specialty items that inspire
+                    creativity in the kitchen.
+                  </p>
+                  <p>
+                    Thank you for choosing us as your food partner. We are here to make your cooking experience
+                    enjoyable, delicious, and convenient.
                   </p>
                 </div>
               </div>
@@ -145,9 +152,6 @@ export default function AboutPage() {
                   <p>
                     Our facilities are equipped with modern technology for quality testing, grading, and packaging,
                     ensuring that every product meets our stringent standards before reaching our clients.
-                  </p>
-                  <p>
-                    All our facilities are certified to international standards, including ISO 22000, HACCP, and GMP.
                   </p>
                 </div>
               </div>
