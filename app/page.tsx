@@ -163,7 +163,7 @@ export default function Home() {
         </section>
 
         {/* Stats Section */}
-        <section className="py-12 bg-primary text-white">
+        {/* <section className="py-12 bg-primary text-white">
           <div className="container">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
@@ -179,7 +179,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Call To Action */}
         <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-primary/80 text-white">
