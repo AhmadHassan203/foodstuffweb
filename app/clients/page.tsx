@@ -30,7 +30,7 @@ const caseStudies = [
     title: "Retail Distribution Network",
     description: "Streamlining distribution for a national retail chain.",
     image: IMAGES.caseStudies.retail,
-    results: ["40% faster delivery", "Expanded to 100+ locations", "Improved inventory management"],
+    results: ["40% faster delivery", "Expanded to 10+ locations", "Improved inventory management"],
   },
   {
     title: "Hotel Chain Partnership",
@@ -41,12 +41,12 @@ const caseStudies = [
 ]
 
 export default function ClientsPage() {
-  const stats = [
-    { icon: <Building2 className="h-6 w-6" />, value: "500+", label: "Active Clients" },
-    { icon: <Globe2 className="h-6 w-6" />, value: "30+", label: "Countries Served" },
-    { icon: <Users2 className="h-6 w-6" />, value: "95%", label: "Client Retention" },
-    { icon: <BarChart4 className="h-6 w-6" />, value: "20+", label: "Years Experience" },
-  ]
+  // const stats = [
+  //   { icon: <Building2 className="h-6 w-6" />, value: "50+", label: "Active Clients" },
+  //   { icon: <Globe2 className="h-6 w-6" />, value: "3+", label: "Countries Served" },
+  //   { icon: <Users2 className="h-6 w-6" />, value: "95%", label: "Client Retention" },
+  //   { icon: <BarChart4 className="h-6 w-6" />, value: "20+", label: "Years Experience" },
+  // ]
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -77,7 +77,7 @@ export default function ClientsPage() {
         {/* Stats Section */}
         <section className="py-12 bg-muted/30">
           <div className="container">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center animate-fade-in">
                   <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4">
@@ -87,7 +87,7 @@ export default function ClientsPage() {
                   <div className="text-muted-foreground">{stat.label}</div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </section>
 
