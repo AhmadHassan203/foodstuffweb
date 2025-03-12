@@ -115,12 +115,12 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-2">About DNG FOODS</h2>
                 <div className="w-20 h-1 bg-primary rounded-full mb-6"></div>
                 <p className="mt-4 text-muted-foreground">
-                  With over 20 years of experience in the food trading industry, we've built a reputation for
-                  excellence, reliability and quality.
+                Welcome to DNG FOODS, your trusted source for high-quality, sustainable food. We offer fresh, globally sourced ingredients to inspire every kitchen, catering to all tastes and dietary needs. 
                 </p>
                 <p className="mt-4 text-muted-foreground">
                   Our mission is to connect global producers with businesses, ensuring the highest quality standards and
                   efficient supply chains.
+                  Thank you for choosing us to make cooking enjoyable and memorable.
                 </p>
                 <div className="mt-8">
                   <Button className="btn-gradient rounded-full shadow-lg" asChild>
