@@ -130,7 +130,7 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
-              <div className="relative h-[400px] rounded-xl overflow-hidden animate-scale-in">
+              {/* <div className="relative h-[400px] rounded-xl overflow-hidden animate-scale-in">
                 <Image
                   src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?q=80&w=600&h=800&auto=format&fit=crop"
                   alt="Our facility"
@@ -143,7 +143,7 @@ export default function Home() {
                   <p className="text-2xl font-bold text-primary">500+ Clients</p>
                   <p className="text-sm text-muted-foreground">Across 30+ countries</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
